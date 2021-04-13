@@ -153,3 +153,14 @@ linkCards.forEach(card=>{
 }
  topButton.addEventListener('click',scrollTop)
 
+ ////////////// CONTROL SCROLL //////////////
+
+window.addEventListener('scroll', ()=>{
+    //HIDE TOP BUTTON:
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if(topButton.classList.contains('hide'))
+        topButton.classList.remove('hide')
+      } else {
+        topButton.classList.add('hide')
+      }
+})

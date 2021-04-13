@@ -22,9 +22,9 @@
 #top-btn:hover{
   transform: translateY(-10px);
 }
-/* #top-btn.hide{
-
-} */
+#top-btn.hide{
+  bottom: -100px;
+}
 
 
 /* ////////////// SIDEBAR ////////////// */
