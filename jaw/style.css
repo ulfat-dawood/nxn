@@ -1,0 +1,78 @@
+/* COLORS */
+:root{
+    --bg: #F5F5F5; 
+    --box: #dbdbdb; 
+    --text: #505050; 
+}
+/* NORMALIZE */
+*,*::before,*::after{
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+	color: var(--text); 
+}
+
+html{
+	font-size:62.5%  /* 1rem  = 10px */
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background: var(--bg); 
+	font-size: 2rem;
+
+	/* CENTER */
+	display:flex; 
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.lower-jaw-container{
+	position: relative;
+}
+.lower-jaw{
+	display: flex;
+}
+.lower-jaw img{
+	height: 100px;
+}
+
+.lower-line{
+	position: absolute;
+	top:19px; 
+
+}
+.lower-line img{
+	height: 24.2px;
+
+}
+img{
+	display: block;
+	transition: all 1s ease;
+}
+img:not(.lower-line img):hover{
+	z-index: 99; transform: scale(1.2);  cursor: pointer;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10rem; cursor: pointer;
+}
+.buttons div{
+	background: var(--bg-color);
+	padding: 3px 10px;
+	color:#eee; 
+	border-radius: 5px;;
+}
+
+#msg{
+	margin: auto;width:fit-content; 
+	margin-top:6rem; 
+	padding: 5px 15px; border-radius: 10px;
+	background: #dbdbdbcc;
+	font-size: 1.5rem;
+}
+
