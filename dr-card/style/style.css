@@ -1,0 +1,131 @@
+body{
+	font-family: 'Tajawal', sans-serif;
+}
+
+#dr-cards-container{
+	height: 500px;
+	width: 800px;
+	max-width: 90%;
+	margin:auto;
+}
+
+#dr-cards-container .card{
+	background: #fff;
+	box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+	border-radius: 7px;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+#dr-cards-container .img-container{
+ background-color: #EFF8FF;
+ /* border: 3px solid red; */
+ flex-basis: 25%;
+ position: relative;
+}
+#dr-cards-container .img-container figure{
+	/* border:1px solid green; */
+	margin:0; 
+	overflow: hidden;
+	position: absolute;
+	top:0;left:0; right:0; bottom:0;
+
+}
+#dr-cards-container .img-container .avatar{
+	width:100%;
+	height: 100%;
+	object-fit: cover; 
+}
+
+#dr-cards-container .card-details{
+	padding:1rem;
+	flex: 1;
+}
+
+#dr-cards-container .top{
+	background: #EFF8FF;
+	border-radius: 7px;
+	width:100%; 
+	display: flex;
+	justify-content: space-between;
+	padding:1rem; 
+	box-sizing: border-box;
+}
+
+#dr-cards-container .dr-name, .dr-specialty{
+	display: flex;
+	align-items: center;
+}
+#dr-cards-container .dr-name img, #dr-cards-container .dr-specialty img{
+	display: block;
+	margin-left: .5rem;
+}
+#dr-cards-container .dr-name{
+	font-size: larger;
+	margin-bottom: 1.5rem;
+}
+#dr-cards-container .dr-specialty .specialty{
+	color:#1FC0F3;
+}
+#dr-cards-container button.book{
+	display: block;
+	height: fit-content;
+	font-family: 'Tajawal', sans-serif;
+	background: #1FC0F3 ;
+	border: none;
+	padding:.5em 1em;
+	border-radius: 3px;
+	color:#fff;
+	font-weight: 600;
+	cursor: pointer;
+	outline:  none;
+	transition: all .15s ease;
+}
+#dr-cards-container button.book:hover {
+    filter:brightness(1.1) ;
+}
+
+#dr-cards-container button.book:focus {
+	
+	box-shadow: 0 0 0px 5px rgba(31, 192, 243, .4);
+}
+#dr-cards-container button.book:active {
+    transform: scale(0.98);
+}
+
+#dr-cards-container .bottom{
+	display: flex;
+}
+
+#dr-cards-container .bottom .fee,#dr-cards-container .bottom .hospital{
+	display: flex;
+	align-items: center;
+	margin: 1rem 0 0 1rem ;
+	color:#909090; 
+	background: #eee;
+	padding: .25em;
+	border-radius: 3px;
+
+}
+#dr-cards-container .bottom .fee img,#dr-cards-container .bottom .hospital img{
+	margin:0 0 5px .5rem; 
+}
+
+@media (max-width: 590px){
+	#dr-cards-container .top{flex-direction: column;}
+	#dr-cards-container .bottom{flex-direction: column;}
+	#dr-cards-container button.book{margin-top: 1rem;}
+	#dr-cards-container .bottom .fee,#dr-cards-container .bottom .hospital{margin: 1rem 0 0 0rem };
+}
+@media (max-width: 490px){
+	#dr-cards-container .card{flex-direction: column;align-items: center; padding:1rem;}
+	#dr-cards-container .img-container{
+		flex-basis: 100px;
+		width: 100px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	#dr-cards-container .card-details{width:100%}
+}
