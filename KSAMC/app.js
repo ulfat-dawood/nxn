@@ -173,3 +173,21 @@ window.addEventListener('scroll', ()=>{
         
     // }
 })
+
+ ////////////// PRINT DAYS IN ARABIC //////////////
+ const dayOfWeekHolder= document.querySelector('#day-holder');
+ const dateHolder= document.querySelector('#date-holder');
+ const timeHolder= document.querySelector('#time-holder');
+ var months = ["يناير", "فبراير", "مارس", "إبريل", "مايو", "يونيو",
+ "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
+
+var days =["اﻷحد","اﻷثنين","الثلاثاء","اﻷربعاء","الخميس","الجمعة","السبت"];
+
+var date = new Date();
+const day = date.getDay();
+const year = date.getFullYear()
+const month= months[date.getMonth()];
+const dayOfWeek= days[date.getDay()];
+const dateFormat= ` ${day} ${month}، ${year} `;
+dayOfWeekHolder.innerHTML= dayOfWeek;
+dateHolder.innerHTML= dateFormat; 
