@@ -154,13 +154,22 @@ linkCards.forEach(card=>{
  topButton.addEventListener('click',scrollTop)
 
  ////////////// CONTROL SCROLL //////////////
-
+const header= document.querySelector('#header'); 
 window.addEventListener('scroll', ()=>{
     //HIDE TOP BUTTON:
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        if(topButton.classList.contains('hide'))
+    if(topButton.classList.contains('hide'))
         topButton.classList.remove('hide')
-      } else {
+    } else {
         topButton.classList.add('hide')
-      }
+    }
+
+    //change to scrolling header:
+    // if(window.pageYOffset > 100){
+    //     header.classList.add('header-scroll'); 
+    // }else{
+    //     if(header.classList.contains('header-scroll'))
+    //         header.classList.remove('header-scroll')
+        
+    // }
 })

@@ -90,8 +90,15 @@
   padding: 5rem 0;
   display: flex;
   justify-content: space-between;
-  /* min-width:100%;  */
 }
+/* #header.header-scroll{
+  position: sticky; 
+  top:0; 
+  z-index: 1;
+  padding: 1rem 0;
+  background: var(--bg);
+  box-shadow: 0 5px 10px 0px rgba(0,0,0,15%);
+} */
 #header .logo h3 {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
