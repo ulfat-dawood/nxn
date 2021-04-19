@@ -166,18 +166,21 @@
   width: 100%;
   overflow: scroll;
   overflow-y: hidden;
-  /* position: relative; */
+  position: relative;
 
 }
-/* #news-section .news-cards::before{
+#news-section .shadow-mask{
+  position: relative;
+}
+#news-section .shadow-mask::before{
     position: absolute;
     left:0px; 
     top:0;
     content:"";
-    background-image: linear-gradient(to right, var(--bg) 10% ,red 100%);
-    width:10%; height: 100%;
+    background-image: linear-gradient(to right, var(--bg)  ,#F4F7F700 );
+    width:7%; height: 100%;
     z-index: 99;
-} */
+}
 
 #news-section .news-card {
   height: 280px;
@@ -213,9 +216,89 @@
   transition: background-size 0.25s ease-in;
   border-radius: 15px;
 }
-/* #news-section .news-card  .news-title span:hover{
-    background-size: 100% 100%;
-} */
+
+#news-section .modal-box{
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 15%);
+  width:700px;
+  max-width: 80%; 
+  position:fixed;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+
+#news-section .modal-box header{
+  display: flex;
+  justify-content: space-between;
+  padding : 1rem; 
+  background: var(--bg);
+}
+#news-section .modal-box header h4{
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+#news-section .modal-box header .close-modal{
+  font-size: 3rem;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#news-section .modal-box main{
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  padding:2rem 5rem; 
+}
+#news-section .modal-box main .img-holder{
+  width:80%;
+  height: 200px;
+  border-radius: 5px;
+  overflow:hidden; 
+  margin: auto;
+
+}
+#news-section .modal-box main .img-holder img{
+  width:100%; height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+#news-section .modal-box main .news-title{
+  margin: 2rem auto;
+}
+#news-section .modal-box main .news-body{
+  font-size: 18px;
+  color: var(--text-2)
+}
+#news-section .modal-box .cta{
+  background: var(--secondary-dim);
+  text-align: center;
+  padding:1rem;
+  font-weight: 600;
+  cursor: pointer; 
+}
+#news-section .modal-box .cta:hover{
+  background: var(--secondary);
+  color: #fff; 
+}
+#news-section .modal-overlay{
+  position: fixed;
+  top:0; right: 0; bottom: 0; left:0;
+  background: rgba(0,0,0,.5);
+  z-index: 99;
+  display: none;
+}
+#news-section .modal-overlay.active, #news-section .modal-box.active{
+  display: block;
+
+} 
+
 
 #news-section .news-card .read-more {
   background: #fff;

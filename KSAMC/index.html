@@ -83,7 +83,21 @@
                                             هنا عنوان الخبر، العنوان قد يكون طويل
                                         </span>
                                     </div>
-                                    <button class="read-more"> <span>&#10140;</span> اقرا المزيد </button>
+                                    <button class="read-more" data-open-modal='#modal-1'> <span>&#10140;</span> اقرا المزيد </button>
+                                    <div class="modal-box" id='modal-1'>
+                                        <header>
+                                            <h4>Modal Title</h4>
+                                            <div class='close-modal' data-close-modal='#modal-1'>&times;</div>
+                                        </header>
+                                        <main>
+                                            <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores illum dolorem necessitatibus perferendis dicta similique perspiciatis corporis quae ab?
+                                            </p>
+                                            <div class="cta" data-close-modal='#modal-1'>CTA</div>
+                                        </main>
+                                    </div>
+                                    <div class="modal-overlay" data-close-modal='#modal-1'></div>
+
                                 </div>
                             </div>
 
@@ -109,6 +123,7 @@
                                         </span>
                                     </div>
                                     <button class="read-more"> <span>&#10140;</span> اقرا المزيد </button>
+                                    
                                 </div>
                             </div>
 
@@ -151,6 +166,7 @@
     </div>
 
     <script src="./app.js"></script>
+    <script src="./news.js"></script>
 </body>
 
 </html>
