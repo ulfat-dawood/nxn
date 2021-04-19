@@ -251,7 +251,7 @@
   cursor: pointer;
 }
 #news-section .modal-box main{
-  max-height: 80vh;
+  max-height: 68vh;
   overflow-y: auto;
   text-align: center;
   padding:2rem 5rem; 
