@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'JF Flat Jozoor';
+    src: url('fonts/arabicFonts/JF-Flat-regular.eot');
+    src: url('fonts/arabicFonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/arabicFonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('fonts/arabicFonts/JF-Flat-regular.woff') format('woff'),
+    url('fonts/arabicFonts/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Ara Jozoor';
+	src: url('fonts/arabicFonts/AraJozoor-Regular.eot');
+	src: local('?'), url('fonts/arabicFonts/AraJozoor-Regular.woff') format('woff'), url('fonts/AraJozoor-Regular.ttf') format('truetype'), url('fonts/AraJozoor-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'KFGQPC Uthman Taha Naskh';
+    src: url('fonts/arabicFonts/UthmanicHafs1Ver09.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PDMS Saleem QuranFont';
+    src: url('fonts/arabicFonts/PDMS_Saleem_QuranFont-signed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/arabicFonts/amiri-regular.eot?') format('eot'),
+         url('fonts/arabicFonts/amiri-regular.woff') format('woff'),
+         url('fonts/arabicFonts/amiri-regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: Amiri QuranWeb;
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/arabicFonts/amiri-quran.eot?') format('eot'),
+         url('fonts/arabicFonts/amiri-quran.woff') format('woff'),
+         url('fonts/arabicFonts/amiri-quran.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/arabicFonts/amiri-bold.eot?') format('eot'),
+         url('fonts/arabicFonts/amiri-bold.woff') format('woff'),
+         url('fonts/arabicFonts/amiri-bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: oblique;
+    font-weight: 400;
+    src: url('fonts/arabicFonts/amiri-slanted.eot?') format('eot'),
+         url('fonts/arabicFonts/amiri-slanted.woff') format('woff'),
+         url('fonts/arabicFonts/amiri-slanted.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: AmiriWeb;
+    font-style: oblique;
+    font-weight: 700;
+    src: url('fonts/arabicFonts/amiri-boldslanted.eot?') format('eot'),
+         url('fonts/arabicFonts/amiri-boldslanted.woff') format('woff'),
+         url('fonts/arabicFonts/amiri-boldslanted.ttf')  format('truetype');
+}
+
+/* 
+ * Droid Arabic Naskh (Early Access) http://www.google.com/webfonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Bold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Bold.ttf) format('truetype');
+}
+
+/* 
+ * Droid Arabic Kufi (Arabic) http://www.google.com/webfonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(arabicFonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'),
+       url(arabicFonts/DroidKufi-Regular.woff) format('woff'),
+       url(arabicFonts/DroidKufi-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(arabicFonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'),
+       url(arabicFonts/DroidKufi-Bold.woff) format('woff'),
+       url(arabicFonts/DroidKufi-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Thabit';
+    src: url('fonts/arabicFonts/Thabit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thabit';
+    src: url('fonts/arabicFonts/Thabit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scheherazade';
+    src: url('fonts/arabicFonts/ScheherazadeRegOT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/************/
+/*@font-face {
+    font-family: 'Open Sans';
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/droidarabicnaskh/v2/DroidNaskh-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}*/
+/*
+@font-face {
+    font-family: 'Open Sans';
+    src: url('arabicFonts/amiri-regular.eot');
+    src: url('arabicFonts/amiri-regular.eot?#iefix') format('embedded-opentype'),
+    url('arabicFonts/amiri-regular.svg#JF Flat Regular') format('svg'),
+    url('arabicFonts/amiri-regular.woff') format('woff'),
+    url('arabicFonts/amiri-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+*/
+@font-face {
+  font-family: 'Lateef';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lateef'), url(http://fonts.gstatic.com/s/lateef/v10/_hjeHDsHwaiVMYwxvpdBwvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* arabic */
+@font-face {
+  font-family: 'Amiri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amiri'), local('Amiri-Regular'), url(http://fonts.gstatic.com/s/amiri/v7/Pmj8RyKsUWpsaz_klfK4LA.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* arabic */
+@font-face {
+  font-family: 'Amiri';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amiri Bold'), local('Amiri-Bold'), url(http://fonts.gstatic.com/s/amiri/v7/mmHwJz0KRs9eU5Fnp3rH_hTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+/************/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}

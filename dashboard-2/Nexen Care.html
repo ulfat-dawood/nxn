@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://62.149.77.36/nexen_test/? -->
+<html lang="en" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"-->
+    <link rel="icon" type="image/ico" href="http://62.149.77.36/nexen_test/Logo2.png">
+    <title>Nexen Care</title>
+
+    <link rel="stylesheet" href="./Nexen Care_files/ace.min.css" class="ace-main-stylesheet" id="main-ace-style">
+	<!--link rel="stylesheet" href="assets/build/css/ace-rtl.min.css" class="ace-main-stylesheet" id="main-ace-style" /--> 
+	<link rel="stylesheet" href="./Nexen Care_files/bootstrap-duallistbox_ar.min.css">
+    <link rel="stylesheet" href="./Nexen Care_files/loaders.css">
+   
+    <!-- Bootstrap -->
+    <link href="./Nexen Care_files/bootstrap_ar.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./Nexen Care_files/loaders.css">
+    <!-- Font Awesome -->
+    <link href="./Nexen Care_files/font-awesome.min.css" rel="stylesheet">
+	<link href="./Nexen Care_files/font-awesome-animation.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./Nexen Care_files/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="./Nexen Care_files/green.css" rel="stylesheet">
+	
+    	<link rel="stylesheet" href="./Nexen Care_files/fonts.googleapis.com.css">
+	
+	
+    <!-- bootstrap-progressbar -->
+    <link href="./Nexen Care_files/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="./Nexen Care_files/jqvmap.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="./Nexen Care_files/daterangepicker_ar.css" rel="stylesheet">
+    
+	 <!-- Datatables -->
+	 <!--link href="assets/dataTables/assets/medai/css/jquery.dataTables.min.css" rel="stylesheet">
+	 <link href="assets/dataTables/assets/medai/css/responsive.dataTables.min.css" rel="stylesheet"-->
+    <link href="./Nexen Care_files/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="./Nexen Care_files/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="./Nexen Care_files/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="./Nexen Care_files/responsive.bootstrap_ar.min.css" rel="stylesheet">
+    <link href="./Nexen Care_files/scroller.bootstrap.min.css" rel="stylesheet">
+	
+	
+	
+    <!-- Custom Theme Style -->
+	<link href="./Nexen Care_files/select2.min.css" rel="stylesheet">
+    <!--link href="assets/build/css/custom.min.css" rel="stylesheet"-->
+	
+	
+	
+	<script src="./Nexen Care_files/dateConversion.js"></script>
+	<script src="./Nexen Care_files/dateConversion_ctrl.js"></script>
+	<!-- jQuery -->
+    <script src="./Nexen Care_files/jquery.min.js"></script>
+	
+	 <!-- jQuery Smart Wizard -->
+    <script src="./Nexen Care_files/jquery.smartWizard.js"></script>
+	
+	<link href="./Nexen Care_files/iframe.css" rel="stylesheet">
+
+	<style>
+	   .badge-green1{background-color:#d4eeda; color:#253529;}
+	   .badge-green2{background-color:#f0fff0; color:#253529;}
+	   .badge-green4{background-color:#f7f9f7; color:#253529;}
+	   
+	   .badge-blue1{background-color:#e6e8fa; color:#253529;}
+	   
+	   
+	   
+	   .kufi_100 {font-family: "Droid Arabic Kufi", Times, serif !important; font-size:100%}
+	   .red2 { color:#b85356!important; }
+	   .red_border2 { border-color:#b85356 !important; }
+	   #datatable-responsive td , #datatable-responsive th { border-right-width:1px !important;}
+	   
+	       .img_thumb_30_15 {
+  width: 30px !important;
+    height:15px!important;
+    max-width: 160px!important;
+    /*margin: 0 auto;*/
+	
+	
+  }
+	</style>
+	<!--link href="assets/build/css/custom2.css" rel="stylesheet"-->
+	
+    <link href="./Nexen Care_files/custom_ar.min.css" rel="stylesheet">
+	
+    <script src="./Nexen Care_files/jquery.validate_ar.min.js"></script> 
+
+            
+    <style>
+	  .row_selected  {
+		background-color: #dbf4f0 !important; /* Add !important to make sure override datables base styles */
+	  }
+	  
+	  .row_selected td {
+	     border-top-color: #8fc1b6!important;
+		 border-bottom: 0.1px solid #8fc1b6!important;
+	  }
+	  
+	  .rejected_row  {
+		background-color: #fff6f7 !important; /* Add !important to make sure override datables base styles */
+	  }
+	  
+	  .rejected_row td {
+	     border-top-color: #fad8d9!important;
+		 border-bottom: 0.1px solid #fad8d9!important;
+	  }
+	  
+	  .approved_row  {
+		background-color: #F0FFFF !important; /* Add !important to make sure override datables base styles */
+	  }
+	  
+	  .approved_row td {
+	     border-top-color: 	#c8fbf5!important;
+		 border-bottom: 0.1px solid #c8fbf5!important;
+	  }
+	  /*
+	  .row_selected : after{
+	     border-top-color: #8fc1b6!important;
+		 border-bottom: 0.1px solid #8fc1b6!important;
+	  }
+	  */
+	  /* Color of invalid field */
+		.has-error .control-label,
+		.has-error .help-block,
+		.has-error .form-control-feedback {
+			color: #a94442!important;
+		}
+
+		/* Color of valid field */
+		.has-success .control-label,
+		.has-success .help-block,
+		.has-success .form-control-feedback {
+			color: #3c763d!important;
+		}
+
+
+	
+	#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("assets/images/loader.gif") no-repeat center center rgba(0,0,0,0.25);
+}
+
+
+ /****************************/
+.profile-user-info{display:table;width:98%;width:calc(100% - 24px);margin:0 auto; font-size:100%;}
+.profile-info-row{display:table-row}
+.profile-info-name{text-align:right;padding:6px 10px 6px 4px;font-weight:400;/*color:#667E99;*/background-color:transparent;
+                   border-top:1px dotted #D5E4F1;display:table-cell;width:110px;vertical-align:middle;}
+.profile-info-value{display:table-cell;padding:6px 4px 6px 6px;border-top:1px dotted #D5E4F1}
+.profile-info-value>span+span:before{display:inline;content:",";margin-left:1px;margin-right:3px;color:#666;border-bottom:1px solid #FFF}
+.profile-info-value>span+span.editable-container:before{display:none}.profile-info-row:first-child .profile-info-name{border-top:none}
+.profile-info-row:first-child .profile-info-value{border-top:none}.profile-user-info-striped{border:1px solid #DCEBF7}
+.profile-user-info-striped .profile-info-name{color:#336199;background-color:#EDF3F4;border-top:1px solid #F7FBFF}
+.profile-user-info-striped .profile-info-value{border-top:1px dotted #DCEBF7;padding-left:12px}
+
+@media only screen and (max-width:480px){.profile-info-name{width:80px}
+.profile-user-info-striped .profile-info-name{float:none;width:auto;text-align:left;padding:6px 4px 6px 10px;display:block}
+.profile-user-info-striped .profile-info-value{margin-left:10px;display:block}}
+/****************************/
+
+  .modal-xl {
+  max-width: 1200px!important;
+  width:90%!important;
+}
+
+ .modal-xl2 {
+  max-width: 1260px!important;
+  width:100%!important;
+}
+
+.orange{color:#FFA500!important;}
+
+.pink {color:#FF69B4;}
+
+.title_bg { background:#FFFFE0!important; }
+
+.font-w-n {font-weight:normal;}
+
+	</style>
+	
+			   <style>
+				/*.loader {
+				  border: 16px solid #f3f3f3;
+				  border-radius: 50%;
+				  border-top: 16px solid #3498db;
+				  width: 100px;
+				  height:100px;
+				  -webkit-animation: spin 2s linear infinite;
+				  animation: spin 2s linear infinite;
+				}
+
+				@-webkit-keyframes spin {
+				  0% { -webkit-transform: rotate(0deg); }
+				  100% { -webkit-transform: rotate(360deg); }
+				}
+
+				@keyframes spin {
+				  0% { transform: rotate(0deg); }
+				  100% { transform: rotate(360deg); }
+				}*/
+				
+				.loader,
+				.loader:before,
+				.loader:after {
+				  border-radius: 50%;
+				  width: 2.5em;
+				  height: 2.5em;
+				  -webkit-animation-fill-mode: both;
+				  animation-fill-mode: both;
+				  -webkit-animation: load7 1.8s infinite ease-in-out;
+				  animation: load7 1.8s infinite ease-in-out;
+				}
+				.loader {
+				  color: #acbad4; /*#3498db;*/
+				  font-size: 10px;
+				  margin: 10px auto;
+				  position: relative;
+				  text-indent: -9999em;
+				  -webkit-transform: translateZ(0);
+				  -ms-transform: translateZ(0);
+				  transform: translateZ(0);
+				  -webkit-animation-delay: -0.16s;
+				  animation-delay: -0.16s;
+				}
+				.loader:before,
+				.loader:after {
+				  content: '';
+				  position: absolute;
+				  top: 0;
+				}
+				.loader:before {
+				  left: -3.5em;
+				  -webkit-animation-delay: -0.32s;
+				  animation-delay: -0.32s;
+				}
+				.loader:after {
+				  left: 3.5em;
+				}
+				@-webkit-keyframes load7 {
+				  0%,
+				  80%,
+				  100% {
+					box-shadow: 0 2.5em 0 -1.3em;
+				  }
+				  40% {
+					box-shadow: 0 2.5em 0 0;
+				  }
+				}
+				@keyframes load7 {
+				  0%,
+				  80%,
+				  100% {
+					box-shadow: 0 2.5em 0 -1.3em;
+				  }
+				  40% {
+					box-shadow: 0 2.5em 0 0;
+				  }
+				}
+
+			</style>
+						
+			
+			<style>
+			    #datatable-responsive4 tbody tr td
+			    {
+				  white-space: normal;
+				}
+				
+				.color_1
+			    {
+				 background-color: #d9edf7!important; 
+
+				}
+				
+			</style>
+			
+	 <script> 
+		 var timer = 0;
+		 function set_interval() {
+		  timer = setInterval("auto_logout()", 1200000);
+		 }
+
+		 function reset_interval() {
+		  if (timer != 0) {
+			clearInterval(timer);
+			timer = 0;
+			timer = setInterval("auto_logout()", 1200000);
+		  }
+		 }
+
+		 function auto_logout() {
+		  window.location = "?logout";
+		 }
+	</script>
+	<script>
+	document.onreadystatechange = function () {
+	  var state = document.readyState
+	  if (state == 'interactive') {
+		   document.getElementById('contents').style.visibility="hidden";
+	  } else if (state == 'complete') {
+		  setTimeout(function(){
+			 document.getElementById('interactive');
+			 document.getElementById('load').style.visibility="hidden";
+			 document.getElementById('contents').style.visibility="visible";
+		  },1);
+	  }
+	}
+	
+	//////////////////////////////////
+	var side   = 'left';
+	var o_side = 'right';
+	var dir    ='ltr';
+	var applyLBL = 'Apply';
+	var cancelLBL = 'Cancel';
+		side   = 'right';
+	o_side = 'left';
+	dir    ='rtl';
+	applyLBL = '<font class="kufi_110">تنفيذ</font>';
+	cancelLBL = '<font class="kufi_110">الغاء</font>';
+		//////////////////////////////////
+	
+	</script>
+
+    	<!--------------------------------------->	
+	<!-- Add fancyBox main JS and CSS files -->
+	<link rel="stylesheet" type="text/css" href="./Nexen Care_files/jquery.fancybox.css" media="screen">
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="./Nexen Care_files/jquery.fancybox-buttons.css">
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="./Nexen Care_files/jquery.fancybox-thumbs.css">
+	<!--------------------------------------->
+	
+	<style type="text/css">
+	  /*****scrolling page*****/
+	  #scroll-pg
+	  {
+	   bottom: 100px;
+	   top: 0px; /* +2 because of the borders */
+	   overflow-y: scroll;
+	   overflow-x: hidden; 
+	   border: 0px solid black;
+	   left: 0;
+	   right: 0;
+	   /*height:350px;*/
+	   /*height:250px;*/
+		height:400px;
+	   width:100%;
+	   
+	  }
+	 </style>
+	 
+	  	 <link href="./Nexen Care_files/all.css" rel="stylesheet">
+	 <script src="./Nexen Care_files/icheck.js"></script>
+	 <script src="./Nexen Care_files/custom.min.js"></script>
+	 
+	 
+	<!-- Bootstrap -->
+    <script src="./Nexen Care_files/bootstrap.min.js"></script>
+	<script src="./Nexen Care_files/highcharts.js"></script>
+	
+		<script src="./Nexen Care_files/editor.js"></script>
+		
+	    <script src="./Nexen Care_files/loading.js"></script>	
+    
+    <script src="./Nexen Care_files/jquery.popconfirm_ar.js"></script>	
+  <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style></head>
+    <body class="rtl nav-sm">
+    <div id="load" style="visibility: hidden;"></div>
+    <div class="container body">
+      <div class="main_container">
+	  
+	  	    <link href="./Nexen Care_files/jquery.bootstrap-touchspin_ar.css" rel="stylesheet">
+		<script src="./Nexen Care_files/jquery.bootstrap-touchspin.js"></script>
+
+				   <style>
+		 .profile-user-info{display:table;width:98%;width:calc(100% - 24px);margin:0 auto; font-size:130%;}
+		 
+		 .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
+		  border-radius: 0;
+		  border-top-left-radius: 4px;
+		  
+		   padding-top:40%;
+		   margin-top:-0px;
+		   
+			/*border:2px solid red!important;*/
+			
+			display:none!important;;
+		}
+
+		.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+		  margin-top: -4.5px;
+		  padding-top:24%;
+		  border-radius: 0;
+		  border-bottom-left-radius: 4px;
+		  
+		  display:none!important;;
+		}
+
+		</style>	
+			  	  
+	  
+	  	  <div class="modal fade bs-example-modal-sm" id="confirm" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+			  <div class="modal-content">
+				<div class="modal-header  badge-green4">
+				  <button type="button" class="close pull-left red" id="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times red"></i></span>
+				  </button>
+				  <h4 class="modal-title" id="myModalLabel2">رسالة تأكيد</h4>
+				</div>
+				 
+				<div class="modal-body" style="font-size:150%;">
+				   للتأكيد اضغط موافق				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal" id="cancel">إلغاء</button>
+				  <button type="button" class="btn btn-primary" id="ok">موافق</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+	  	  
+	  	     <style>
+.iframe_div_cls  { background:url(assets/images/loader/loader-64x/Preloader_2.gif) center top no-repeat; }
+.responsive-object iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	/*background:url(assets/images/page-loader.gif) center center no-repeat;*/
+}
+.responsive-object {
+  position: relative;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin: 10px 0;
+  overflow: hidden;
+  
+  
+}
+
+.dataTables_wrapper .dataTables_filter {
+  width:100%;
+  text-align:right!important;
+}
+
+.dataTables_paginate{float:right!important;text-align:right!important; width:100%!important; }
+.bg-lightblue { background:#f1f5f8; }
+.bg-lightblue2 { background:#f3fafe!important; }
+.bg-lightyellow {background:#FFFFE0!important; }
+
+.padding-right-0 {padding-right:0%!important;}
+.padding-right-1 {padding-right:1%!important;}
+.padding-right-2 {padding-right:2%!important;}
+.padding-right-3 {padding-right:3%!important;}
+.padding-right-4 {padding-right:4%!important;}
+.padding-right-5 {padding-right:5%!important;}
+.padding-right-6 {padding-right:6%!important;}
+.padding-right-7 {padding-right:7%!important;}
+.padding-right-8 {padding-right:8%!important;}
+.padding-right-9 {padding-right:9%!important;}
+.padding-right-10 {padding-right:10%!important;}
+.padding-right-11 {padding-right:11%!important;}
+
+.padding-left-0 {padding-right:0%!important;}
+.padding-left-1 {padding-right:1%!important;}
+.padding-left-2 {padding-right:2%!important;}
+.padding-left-3 {padding-right:3%!important;}
+.padding-left-4 {padding-right:4%!important;}
+.padding-left-5 {padding-right:5%!important;}
+.padding-left-6 {padding-right:6%!important;}
+.padding-left-7 {padding-right:7%!important;}
+.padding-left-8 {padding-right:8%!important;}
+.padding-left-9 {padding-right:9%!important;}
+.padding-left-10 {padding-right:10%!important;}
+.padding-left-11 {padding-right:11%!important;}
+
+   </style>   
+   
+   <!--script>
+     var ratio = ((obj.height/obj.width)*100).toPrecision(4) + '%';
+	 $('a').embedly({
+  display: function(obj){
+    // Overwrite the default display.
+    if (obj.type === 'video' || obj.type === 'rich'){
+      // Figure out the percent ratio for the padding. This is (height/width) * 100
+      var ratio = ((obj.height/obj.width)*100).toPrecision(4) + '%'
+
+      // Wrap the embed in a responsive object div. See the CSS here!
+      var div = $('<div class="responsive-object">').css({
+        paddingBottom: ratio
+      });
+
+      // Add the embed to the div.
+      div.html(obj.html);
+
+      // Replace the element with the div.
+      $(this).replaceWith(div);
+    }
+  }
+});
+   </script-->
+   
+  <div class="modal fade bs-example-modal-lg" id="view_pdf" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+
+		<div class="modal-header  badge-green4">
+		  <button type="button" class="close pull-left red" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span>
+		  </button>
+		  <h4 class="modal-title panel-title" id="model_title">
+			  
+		  </h4>
+		</div>
+		    
+			<div class="modal-body"> 
+			   <div class="row">
+				   <!--div role="tabpanel" class="tab-pane fade" id="view_pdf_obj" aria-labelledby="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <!--div id="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <div id="view_pdf_obj" class="responsive-object iframe_div_cls">
+					
+					</div>
+		  
+				</div>
+				
+			   
+							  
+			</div>
+			
+	 
+	  </div>
+	</div>
+  </div>
+  
+    <div class="modal fade bs-example-modal-lg" id="modal_lg" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+
+		<div class="modal-header badge-green4">
+		  <button type="button" class="close pull-left red" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times red"></i></span>
+		  </button>
+		  <h4 class="modal-title panel-title" id="modal_lg_title">
+			  
+		  </h4>
+		</div>
+		    
+			<div class="modal-body"> 
+			   <div class="row">
+				   <!--div role="tabpanel" class="tab-pane fade" id="view_pdf_obj" aria-labelledby="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <!--div id="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <div id="modal_lg_obj" class="responsive-object">
+					
+					</div>
+		  
+				</div>
+				
+			   
+							  
+			</div>
+			
+	 
+	  </div>
+	</div>
+  </div>
+  
+    
+    <div class="modal fade bs-example-modal-xl" id="modal_xl" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+	  <div class="modal-content">
+
+		<div class="modal-header badge-green4">
+		  <button type="button" id="modal_xl_close" class="close pull-left red" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times red"></i></span>
+		  </button>
+		  <h4 class="modal-title panel-title" id="modal_xl_title">
+			  
+		  </h4>
+		</div>
+		    
+			<div class="modal-body"> 
+			   <div class="row">
+				   <!--div role="tabpanel" class="tab-pane fade" id="view_pdf_obj" aria-labelledby="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <!--div id="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <div id="modal_xl_obj" class="responsive-object">
+					
+					</div>
+		  
+				</div>
+				
+			   
+							  
+			</div>
+			
+	 
+	  </div>
+	</div>
+  </div>
+  
+    
+    <div class="modal fade bs-example-modal-md" id="modal_md" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+	  <div class="modal-content">
+
+		<div class="modal-header badge-green4">
+		  <button type="button" class="close pull-left red" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times red"></i></span>
+		  </button>
+		  <h4 class="modal-title panel-title" id="modal_md_title">
+			  
+		  </h4>
+		</div>
+		    
+			<div class="modal-body"> 
+			   <div class="row">
+				   <!--div role="tabpanel" class="tab-pane fade" id="view_pdf_obj" aria-labelledby="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <!--div id="view_pdf_obj">
+					
+				   </div-->
+				   
+				   <div id="modal_md_obj" class="responsive-object">
+					
+					</div>
+		  
+				</div>
+				
+			   
+							  
+			</div>
+			
+	 
+	  </div>
+	</div>
+  </div>
+  
+    
+  <script>
+    $('#modal_xl_close').on('click', function (e) {
+	  e.preventDefault();
+	  $('#modal_xl').modal('hide');
+
+	});
+	
+	window.onload      = function () { set_interval();}
+	window.onmousemove = function () { reset_interval();}
+	window.onclick     = function () { reset_interval();}
+	window.onkeypress  = function () { reset_interval();}
+	window.onscroll    = function () { reset_interval();}
+  </script>
+  
+  <div class="col-md-3 left_col"> <!--menu_fixed-->
+	  <div class="left_col scroll-view">
+		<div class="navbar nav_title" style="border: 0; ">
+		  		  <a href="http://62.149.77.36/nexen_test/?" class="site_title"><i class="fa fa-h-square faa-spin animated faa-slow"></i> <span> <small style="font-size:50%!important;">مشرف النظام</small></span></a>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<!-- menu profile quick info -->
+		<div class="profile clearfix">
+		  <div class="profile_pic">
+			<img src="./Nexen Care_files/user.png" alt="..." class="img-circle profile_img ">
+		  </div>
+		  <div class="profile_info">
+			<span>مرحباً,</span>
+			<h2>سامي خالد</h2>
+			<br>
+			
+		  </div>
+		  <h2><span class="label label-danger" style="color:#fff;margin-right:5%;font-size:57%;">مشرف النظام</span></h2>
+		</div>
+		<!-- /menu profile quick info -->
+		
+		<br>
+
+		<!-- sidebar menu -->
+		<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+		  <div class="menu_section">
+			<h3>
+			   			   <!--div>مستشفى الملك فهد العام بجده</div>
+			   <div style="padding-top:4%; padding-bottom:4%;">مستشفى الملك فهد العام بجده</div--><!--?php//echo $lang['general'];?-->
+			   <div class="message_wrapper">
+				  <h6 class="heading">مشرف النظام</h6>
+				  <blockquote class="message" style="font-size:100%;">
+				    <div></div>
+				  </blockquote>
+				</div>
+			</h3>
+			<ul class="nav side-menu">
+			  			  <li><a href="http://62.149.77.36/nexen_test/?c=home"><i class="fa fa-home"></i> الرئيسية <!--span class="fa fa-chevron-down"></span--></a></li>
+				<!--ul class="nav child_menu">
+				  <li><a href="index.html">Dashboard</a></li>
+				  <li><a href="index2.html">Dashboard2</a></li>
+				  <li><a href="index3.html">Dashboard3</a></li>
+				</ul>
+			  </li-->
+			  			  			  <li><a><i class="fa fa-users" aria-hidden="true"></i> تسجيل مراجع <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+				  <li><a href="http://62.149.77.36/nexen_test/?c=patient&amp;a=add">جديد</a></li>
+				  <li><a href="http://62.149.77.36/nexen_test/?c=patient">عرض الكل</a></li>
+				</ul>
+			  </li>
+			  			  
+			  			  			  <li><a><i class="fa fa-user-md" aria-hidden="true"></i> تسجيل موظف <span class="fa fa-chevron-down"></span></a>
+				<ul class="nav child_menu">
+				  <li><a href="http://62.149.77.36/nexen_test/?c=staff&amp;a=add">جديد</a></li>
+				  <li><a href="http://62.149.77.36/nexen_test/?c=staff">عرض الكل</a></li>
+				</ul>
+			  </li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?#"><i class="fa fa-desktop"></i> شاشة الطبيب <!--span class="fa fa-chevron-down"></span--></a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=medical_referral_orders"><i class="fa fa-list"></i> طلبات التحويل <!--span class="fa fa-chevron-down"></span--></a></li>
+			  			  
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=service_manage&amp;a=order"><img src="./Nexen Care_files/menu.png"> <font id="service_request"><br></font> طلب خدمة <!--span class="fa fa-chevron-down"></span--></a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=make_appt"><i class="fa fa-calendar"></i> المواعيد </a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=ele_med_file&amp;lang=en"><img src="./Nexen Care_files/elec_med_file.png"> <font id="electronic_med_file"><br></font>  الملف الطبي </a></li>
+			  			  
+			  			  			  <li><a><i class="fa fa-calendar-o" aria-hidden="true"></i> جدولة المواعيد <span class="fa fa-chevron-down"></span></a>
+			    <ul class="nav child_menu">
+				  <li><a href="http://62.149.77.36/nexen_test/?c=clin_appt_slots&amp;a=add">جديد</a></li>
+				  <li><a href="http://62.149.77.36/nexen_test/?c=clin_appt_slots">عرض الكل</a></li>
+				</ul>
+			  </li>
+			  			  
+			  			  
+			  
+			  			  
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=vital_signs&amp;a=add"><i class="fa fa-thermometer-three-quarters"></i> زيارة جديدة </a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=nursing_srvcs"><img src="./Nexen Care_files/drugs.png"> <font id="nursing_srvcs"><br></font> خدمات تمريضية </a></li>
+			  	      
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=xray_srvcs"> <img src="./Nexen Care_files/x-ray.png"> <font id="x_ray"><br></font> الأشعة </a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=medical_referral_orders"><i class="fa fa-files-o"></i> طباعة خطاب التحويل </a></li>
+			  			  
+			  			  			  <li><a href="http://62.149.77.36/nexen_test/?c=sick_leave_orders"><i class="fa fa-file-text-o"></i> طباعة نموذج الاجازة المرضية </a></li>
+			  			  
+			  		      			  <li><a href="http://62.149.77.36/nexen_test/?c=forms"><i class="fa fa-clipboard"></i> النماذج </a>
+              			  
+			</li></ul>
+		  </div>
+		  		   <div class="menu_section">
+                <h3>أكواد</h3>
+                <ul class="nav side-menu">
+				  				                    <li><a><i class="fa fa-h-square" aria-hidden="true"></i> مستشفى <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  <li><a href="http://62.149.77.36/nexen_test/?c=hospital&amp;a=add">جديد</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=hospital">عرض الكل</a></li>
+					</ul>
+				  </li>
+				  				  <li><a><i class="fa fa-stethoscope" aria-hidden="true"></i> عيادة <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  					  <li><a href="http://62.149.77.36/nexen_test/?c=clinic&amp;a=add">جديد</a></li>
+					  					  <li><a href="http://62.149.77.36/nexen_test/?c=clinic">عرض الكل</a></li>
+					</ul>
+				  </li>
+				  				  <li><a><i class="fa fa-hospital-o" aria-hidden="true"></i> قسم <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  <li><a href="http://62.149.77.36/nexen_test/?c=dep&amp;a=add">جديد</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=dep">عرض الكل</a></li>
+					</ul>
+				  </li>
+				  				  <li><a><i class="fa  fa-building" aria-hidden="true"></i> مركز <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  					  <li><a href="http://62.149.77.36/nexen_test/?c=center&amp;a=add">جديد</a></li>
+					  					  <li><a href="http://62.149.77.36/nexen_test/?c=center">عرض الكل</a></li>
+					</ul>
+				  </li>
+				  				   <li><a><i class="fa fa-sitemap" aria-hidden="true"></i> صنف <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  <li><a href="http://62.149.77.36/nexen_test/?c=code&amp;a=add">صنف جديد</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=code">عرض جميع الاصناف</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=code&amp;a=add_subcode">صنف فرعي جديد</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=code&amp;a=subcode">عرض جميع الاصناف الفرعية</a></li>
+					</ul>
+				  </li>
+				  
+			      			      <li><a href="http://62.149.77.36/nexen_test/?c=service&amp;a=add"><img src="./Nexen Care_files/settings1.png"> الخدمات </a>
+				  
+				                    </li><li><a href="http://62.149.77.36/nexen_test/?c=service&amp;a=add_cat"><i class="fa fa-certificate"></i> تصنيف الخدمات </a>
+				 
+				  
+                   
+				  
+				  			      </li><li><a href="http://62.149.77.36/nexen_test/?c=service_manage"><i class="fa fa-cog"></i> إدارة الخدمات </a>
+				  
+				  				                    </li><li><a><i class="fa fa-wpforms" aria-hidden="true"></i> ادارة النماذج <span class="fa fa-chevron-down"></span></a>
+					<ul class="nav child_menu">
+					  <li><a href="http://62.149.77.36/nexen_test/?c=form_generator&amp;a=add">جديد</a></li>
+					  <li><a href="http://62.149.77.36/nexen_test/?c=form_generator">عرض الكل</a></li>
+					</ul>
+				  </li>
+				  				  
+				  				  
+                </ul>
+              </div>
+			 			 
+	         			 
+			 			 
+			   		       <div class="menu_section">
+                <h3>احصائيات</h3>
+                <ul class="nav side-menu">
+                  <li><a href="http://62.149.77.36/nexen_test/?c=statistics&amp;a=lab"><i class="fa fa-list"></i> المختبر <!--span class="fa fa-chevron-down"></span--></a></li>
+                </ul>
+              </div>
+			 		</div>
+		<!-- /sidebar menu -->
+
+		<!-- /menu footer buttons -->
+		<div class="sidebar-footer hidden-small">
+		  <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+			<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+		  </a>
+		  <a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+			<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+		  </a>
+		  <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+			<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+		  </a>
+		  <a data-toggle="tooltip" data-placement="top" title="" href="http://62.149.77.36/nexen_test/?logout" data-original-title="Logout">
+			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+		  </a>
+		</div>
+		<!-- /menu footer buttons -->
+	  </div>
+	</div><!-- top navigation -->
+	<div class="top_nav">
+	  <div class="nav_menu">
+		<nav>
+		  <div class="nav toggle">
+			<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+		  </div>
+       
+		  <ul class="nav navbar-nav navbar-left">
+			<li class="">
+			  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				<img src="./Nexen Care_files/user.png" alt="">سامي خالد				<span class=" fa fa-angle-down"></span>
+			  </a>
+			  <ul class="dropdown-menu dropdown-usermenu pull-left">
+				<li><a href="http://62.149.77.36/nexen_test/?c=profile"> بياناتي</a></li>
+				<!--li>
+				  <a href="javascript:;">
+					<span class="badge bg-red pull-right">50%</span>
+					<span>Settings</span>
+				  </a>
+				</li>
+				<li><a href="javascript:;">Help</a></li-->
+				<li><a href="http://62.149.77.36/nexen_test/?logout"><i class="fa fa-sign-out pull-right"></i> تسجيل الخروج</a></li>
+			  </ul>
+			</li>
+
+			<!--li role="presentation" class="dropdown">
+			  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+				<i class="fa fa-envelope-o"></i>
+				<span class="badge bg-green">6</span>
+			  </a>
+			  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+				<li>
+				  <a>
+					<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+					<span>
+					  <span>John Smith</span>
+					  <span class="time">3 mins ago</span>
+					</span>
+					<span class="message">
+					  Film festivals used to be do-or-die moments for movie makers. They were where...
+					</span>
+				  </a>
+				</li>
+				<li>
+				  <a>
+					<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+					<span>
+					  <span>John Smith</span>
+					  <span class="time">3 mins ago</span>
+					</span>
+					<span class="message">
+					  Film festivals used to be do-or-die moments for movie makers. They were where...
+					</span>
+				  </a>
+				</li>
+				<li>
+				  <a>
+					<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+					<span>
+					  <span>John Smith</span>
+					  <span class="time">3 mins ago</span>
+					</span>
+					<span class="message">
+					  Film festivals used to be do-or-die moments for movie makers. They were where...
+					</span>
+				  </a>
+				</li>
+				<li>
+				  <a>
+					<span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+					<span>
+					  <span>John Smith</span>
+					  <span class="time">3 mins ago</span>
+					</span>
+					<span class="message">
+					  Film festivals used to be do-or-die moments for movie makers. They were where...
+					</span>
+				  </a>
+				</li>
+				<li>
+				  <div class="text-center">
+					<a>
+					  <strong>See All Alerts</strong>
+					  <i class="fa fa-angle-right"></i>
+					</a>
+				  </div>
+				</li>
+			  </ul>
+			</li-->
+		    			<li class="dropdown language-switch">
+				<a class="dropdown-toggle kufi_100" data-toggle="dropdown">
+				    					<img src="./Nexen Care_files/gb.png" class="position-left" alt="">
+					English					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li class="kufi_100"><a class="arabic active" href="http://62.149.77.36/nexen_test/?lang=ar"><img src="./Nexen Care_files/sa.png" alt=""> العربية</a></li>
+					<li><a class="english" href="http://62.149.77.36/nexen_test/?lang=en"><img src="./Nexen Care_files/gb.png" alt=""> English</a></li>
+				</ul>
+			</li>
+				
+			
+					  </ul>
+		</nav>
+	  </div>
+	</div>
+	<!-- /top navigation -->
+	
+		 
+		 <!--div id="my_profile" class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+			  <div class="modal-content">
+
+				<div class="modal-header">
+				  <button type="button" class="close left" data-dismiss="modal"><span aria-hidden="true">×</span>
+				  </button>
+				  <h4 class="modal-title" id="myModalLabel">بياناتي</h4>
+				</div>
+				<div class="modal-body">
+				 
+				 			
+				 				</div>
+				
+
+			  </div>
+			</div>
+		  </div--><script>
+  var lang = 'ar';
+  var side = 'right';
+  var opposite_side = 'left';
+  </script>
+
+<style>
+  .font-sz-150{font-size:150%;} 
+  .font-sz-140{font-size:140%;}
+  .font-sz-125{font-size:125%;}
+  .font-sz-120{font-size:120%;}
+  .font-sz-100{font-size:100%;}  
+  /*.daterangepicker { margin-right:-18.20%!important; }*/
+  .legendLabel { padding:5%; }​
+   
+</style>
+<!-- page content -->
+	<div class="right_col" role="main" style="min-height: 1911px;">
+	  
+	  <div class="row">
+		 <div class="col-md-3">
+		        <!--ul class="nav navbar-left panel_toolbox col-md-4 ">
+				  <li class="text-right" style="width:100%;"><a id="refresh_chart1"><i class="fa fa-refresh fa-lg"></i></a></li> 
+				</ul-->
+				<div class="filter">
+				  <fieldset>
+					<label class="control-label col-md-8 col-sm-1 text-left" for="range_date2" style="font-size:110%;"> </label>
+					<div class="control-group col-md-12">
+					  <div class="controls">
+						<div class="input-prepend input-group">
+						  <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+						  						  <input type="text" name="range_date2" id="range_date2" class="form-control" value="2018-01-01 - 2018-12-31">
+						</div>
+					  </div>
+					</div>
+				  </fieldset>
+				  
+				</div>
+				
+				<div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-6">
+		   <a href="http://62.149.77.36/nexen_test/?#" id="refresh_all" class="refresh_link btn btn-app"> 
+		      <i id="refresh_all_icon" class="fa fa-refresh fa-5x text-warning"></i>
+			  <div>تحديث</div>
+		   </a>
+		 </div>
+	  </div>
+	  <div class="divider-dashed"></div>
+	  
+	  <!--  HERE EMBEDED CODE STARTS   --> 
+	  <div id="dash-container">
+	   
+		<div class="stat-count d-flex">
+			<div class="stat-card">
+				 <span id="card-1"></span>
+			</div>
+
+			
+			<div class="stat-card">
+				<span id="card-2"></span>
+			</div>
+
+			<div class="stat-card">
+				<span id="card-3"></span>
+			</div>
+
+			<div class="stat-card">
+				 <span id="card-4"></span>
+		
+
+
+		</div>
+	   
+
+	  </div>
+	  <div id="dash-container">
+	   
+	   <section id="section-1">
+		   <div class="cards-wrapper">
+			   <div class="card-container" style="--color-l:#B8C8D2; ">
+				   <header>
+					   <div class="title">
+						المواعيد
+					   </div>
+					   <div class="icon-wrapper">
+						   
+					   </div>
+					   <div class="total" id="appointment-total">
+						   846
+					   </div>
+				   </header>
+				   <main>
+					   <div class="pie-wrapper">
+		   <canvas id='appointments-pie'></canvas>
+						
+					   </div>	
+				   </main>
+			   </div>
+		   </div>
+
+	   </section>
+
+ </div>
+	  <!--  HERE EMBEDED CODE ENDS   -->
+	  
+
+	</div>
+	
+	<div id="st1"></div>
+	<script type="text/javascript">
+    
+		$(function() {
+			
+			$("#range_date2").daterangepicker({
+				 timePicker:0,
+				 timePicker24Hour: false,
+				 timePickerIncrement:1,
+				 locale:{format:"YYYY-MM-DD"}
+			});
+			
+			/*
+			$("#range_date2").on("apply.daterangepicker",function(a,b){
+			      var range_date2 = $("#range_date2").val();
+				
+				  $.ajax({
+							type: 'post',
+							url: '?c=home&a=get_target2_tab',
+							data: {range_date2 : range_date2},
+							success: function (data) {
+							  tab_id = data;
+							 //alert(tab_id);
+							  $(tab_id).click();
+							  
+							}
+						  });
+							  
+				  go_st0(range_date2);
+
+			});
+			
+			var val = $("#range_date2").val();
+			*/
+			
+           
+			/////////////////////////////////////
+			$(".refresh_link").unbind("click").click(function (e) {
+			  
+			   
+			   
+			   
+			   var val = $("#range_date2").val();
+			   var id = this.id;
+			   
+			   $("#"+id+"_icon").addClass("animated flipInY fa-spin orange");
+			   
+			   if(id == "refresh_all") { go_st0(val);}
+			   else if(id == "refresh_male_pnt")              {go_st0_1 (val, 'male_pnt_count', 'male_pnt_count'); }
+			   else if(id == "refresh_female_pnt")            {go_st0_1 (val, 'female_pnt_count', 'female_pnt_count');}
+			   else if(id == "refresh_saudi_nationality")     {go_st0_1 (val, 'saudi_nationality_count', 'saudi_nationality_count');}
+			   else if(id == "refresh_non_saudi_nationality") {go_st0_1 (val, 'non_saudi_nationality_count', 'non_saudi_nationality_count');}
+			   else if(id == "refresh_saudi_pregnant")        {go_st0_1 (val, 'saudi_pregnant_count', 'saudi_pregnant_count');}
+			   else if(id == "refresh_non_saudi_pregnant")    {go_st0_1 (val, 'non_saudi_pregnant_count', 'non_saudi_pregnant_count');}
+			   else if(id == "refresh_female_elderly")        {go_st0_1 (val, 'female_elderly_count', 'female_elderly_count');}
+			   else if(id == "refresh_male_elderly")          {go_st0_1 (val, 'male_elderly_count', 'male_elderly_count');}
+			   else if(id == "refresh_male_childs")           {go_st0_1 (val, 'male_childs_count', 'male_childs_count');}
+			   else if(id == "refresh_female_childs")         {go_st0_1 (val, 'female_childs_count', 'female_childs_count');}
+			   else if(id == "refresh_female_baby")           {go_st0_1 (val, 'female_baby_count', 'female_baby_count');}
+			   else if(id == "refresh_male_baby")             {go_st0_1 (val, 'male_baby_count', 'male_baby_count');}
+			   else if(id == "refresh_doctor")                {go_st0_1 (val, 'doctor_count', 'doctor_count');}
+			   else if(id == "refresh_nurse")                 {go_st0_1 (val, 'nurse_count', 'nurse_count');}
+			   else if(id == "refresh_pharmacy_staff")        {go_st0_1 (val, 'pharmacy_staff_count', 'pharmacy_staff_count');}
+			   else if(id == "refresh_lab_staff")             {go_st0_1 (val, 'lab_staff_count', 'lab_staff_count');}
+			   
+			   if(id == "refresh_all") { 
+				   setTimeout(function(){
+						 $("#refresh_all_icon").removeClass("animated flipInY fa-spin orange");
+				   }, 3500);
+			   }
+			   
+			   if(id != "refresh_all") { 
+				   setTimeout(function(){
+						 $("#"+id+"_icon").removeClass("animated flipInY fa-spin orange");
+				   }, 600);
+				 }
+			   
+			})
+			/////////////////////////////////////
+			
+			
+			   
+			/////////////////////////////////////////////
+			
+			
+			
+			
+			$("#refresh_chart1").on("click",function(a,b){
+				  var val = $("#range_date2").val();
+
+			});
+			
+			
+			
+			
+            function go_st0( val)
+			{
+			   //$("#loader").removeClass('hide');
+			   //$("#loader2").removeClass('hide');
+			   //a.preventDefault();
+			   //alert("ggkk");
+			   go_st0_1 (val, 'male_pnt_count', 'male_pnt_count');
+			   go_st0_1 (val, 'female_pnt_count', 'female_pnt_count');
+			   go_st0_1 (val, 'saudi_nationality_count', 'saudi_nationality_count');
+			   go_st0_1 (val, 'non_saudi_nationality_count', 'non_saudi_nationality_count');
+			   go_st0_1 (val, 'male_childs_count', 'male_childs_count');
+			   go_st0_1 (val, 'male_baby_count', 'male_baby_count');
+			   go_st0_1 (val, 'female_childs_count', 'female_childs_count');
+			   go_st0_1 (val, 'female_baby_count', 'female_baby_count');
+			   go_st0_1 (val, 'saudi_pregnant_count', 'saudi_pregnant_count');
+			   go_st0_1 (val, 'non_saudi_pregnant_count', 'non_saudi_pregnant_count');
+			   go_st0_1 (val, 'male_elderly_count', 'male_elderly_count');
+			   go_st0_1 (val, 'female_elderly_count', 'female_elderly_count');
+			   go_st0_1 (val, 'doctor_count', 'doctor_count');
+			   go_st0_1 (val, 'nurse_count', 'nurse_count');
+			   go_st0_1 (val, 'pharmacy_staff_count', 'pharmacy_staff_count');
+			   go_st0_1 (val, 'lab_staff_count', 'lab_staff_count');
+			  
+			}
+			
+			
+			function go_st0_1 (val, t, id)
+			{
+			 
+			   $.ajax({
+				type: 'post',
+				url: '?c=home&a='+t,
+				data: {range_date2 : val},
+				success: function (data) {
+				
+				 //alert(data);
+				 $("#"+id).empty();
+				 $("#"+id).append(data);
+				 
+				 
+			    
+				}
+			  });
+			}
+			
+			
+		
+		});
+		
+		
+
+	</script>
+	<!-- /page content -->
+	
+
+	<script src="./Nexen Care_files/jquery.canvasjs_ar.min.js"></script>        <!-- /page content -->
+
+<!-- footer content -->
+        <footer>
+          <div class="pull-left">
+            Medical Sysyem by <a href="http://www.dartechno.com/">Home of Technology</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    
+    <!-- Bootstrap -->
+    <!--script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script-->
+    <!-- FastClick -->
+    <script src="./Nexen Care_files/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./Nexen Care_files/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="./Nexen Care_files/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="./Nexen Care_files/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="./Nexen Care_files/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="./Nexen Care_files/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="./Nexen Care_files/skycons.js"></script>
+	<!-- jQuery Sparklines -->
+    <script src="./Nexen Care_files/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="./Nexen Care_files/jquery.flot.js"></script>
+    <script src="./Nexen Care_files/jquery.flot.pie.js"></script>
+    <script src="./Nexen Care_files/jquery.flot.time.js"></script>
+    <script src="./Nexen Care_files/jquery.flot.stack.js"></script>
+    <script src="./Nexen Care_files/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="./Nexen Care_files/jquery.flot.orderBars.js"></script>
+    <script src="./Nexen Care_files/jquery.flot.spline.min.js"></script>
+    <script src="./Nexen Care_files/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="./Nexen Care_files/date.js"></script>
+    <!-- JQVMap -->
+    <script src="./Nexen Care_files/jquery.vmap.js"></script>
+    <script src="./Nexen Care_files/jquery.vmap.world.js"></script>
+    <script src="./Nexen Care_files/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="./Nexen Care_files/moment.min.js"></script>
+    <script src="./Nexen Care_files/daterangepicker.js"></script>
+   
+	 <!-- jquery.inputmask -->
+    <script src="./Nexen Care_files/jquery.inputmask.bundle.min.js"></script>
+	
+	<!-- Datatables -->
+	<script src="./Nexen Care_files/jquery.dataTables.min.js"></script>
+	<script src="./Nexen Care_files/dataTables.responsive.min.js"></script>
+    <script src="./Nexen Care_files/jquery.dataTables.min(1).js"></script>
+    <script src="./Nexen Care_files/dataTables.bootstrap.min.js"></script>
+    <!--script src="assets/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="assets/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="assets/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="assets/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="assets/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script-->
+	<script src="./Nexen Care_files/dataTables.rowGroup.min.js"></script>
+	
+	
+    <script src="./Nexen Care_files/jszip.min.js"></script>
+    <script src="./Nexen Care_files/pdfmake.min.js"></script>
+    <script src="./Nexen Care_files/vfs_fonts.js"></script>
+	
+	     <!-- validator -->
+    <script src="./Nexen Care_files/validator.js"></script>
+	<!-- Switchery -->
+    <script src="./Nexen Care_files/switchery.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="./Nexen Care_files/custom.min(1).js"></script>
+	<script src="./Nexen Care_files/select2.min.js"></script>
+	<script src="./Nexen Care_files/UQCal.js"></script>
+
+	<!--------- fancybox ---------->
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="./Nexen Care_files/jquery.fancybox.pack.js"></script>
+
+	<!-- Add Button helper (this is optional) -->
+	<script type="text/javascript" src="./Nexen Care_files/jquery.fancybox-buttons.js"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<script type="text/javascript" src="./Nexen Care_files/jquery.fancybox-thumbs.js"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="./Nexen Care_files/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="./Nexen Care_files/jquery.fancybox-rotate.js"></script>
+	<style>
+	  .fancybox-nav span {
+		 /*visibility: visible;*/
+		 /*border:2px solid red;*/
+		}
+		
+		/*.fancybox-prev {
+			position: absolute;
+			top: -25px;
+			right: -25px;
+			width: 36px;
+			height: 36px;
+			cursor: pointer;
+			z-index: 8040;
+		}*/
+		
+		.rotate-icon-top{
+		  position: absolute;
+			top: 5px;
+			right:0px;
+		    width:15%;
+		}
+		
+		.rotate-right-icon-top{
+		  position: absolute;
+			top: 5px;
+			right:70px;
+		    width:20%;
+		}
+		
+		.rotate-left-icon-top{
+		  position: absolute;
+		  top: 5px;
+		  right:120px;
+		  width:20%;
+		}
+	</style>
+	<!----------------------------->
+	
+	<script type="text/javascript">
+
+		jQuery(function($) {
+		     
+		     $('#menu_toggle').trigger('click');
+			 
+			 $("#electronic_med_file").empty();
+			 $("#electronic_med_file").append("</br>");
+			 $("#nursing_srvcs").empty();
+			 $("#nursing_srvcs").append("</br>");
+			 $("#service_request").empty();
+			 $("#service_request").append("</br>");
+			 $("#x_ray").empty();
+			 $("#x_ray").append("</br>");
+			 $("#ph_sidebar").empty();
+			 $("#ph_sidebar").append("</br>");
+			 
+			 
+			 $( "#menu_toggle" ).click(function() {
+			    //$("#nursing_srvcs").empty();
+				
+				var v  = $("#electronic_med_file").html();
+				if(v == '')
+				{
+				  $("#electronic_med_file").append("</br>");
+				  $("#nursing_srvcs").append("</br>");
+				  $("#service_request").append("</br>");
+				  $("#x_ray").append("</br>"); 
+				  $("#ph_sidebar").append("</br>");
+				}
+				else
+				{
+				   $("#electronic_med_file").empty();
+				   $("#nursing_srvcs").empty();
+				   $("#service_request").empty();
+				   $("#x_ray").empty();
+				   $("#ph_sidebar").empty();
+				   
+				   
+				}
+
+			 });
+			 
+		     /***** fancybox ********/
+			 /*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+             
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+	
+	        //$(".gallery ul li a").fancybox({photo:true});
+			$('.fancybox-buttons').fancybox({
+			    type        : 'image',
+				openEffect  : 'fade',//'none',
+				closeEffect : true,//'none',                
+				prevEffect : true,//'none',
+				nextEffect : true,//'none',
+				
+                /*
+				autoPlay: true,
+                loop : true,
+				*/
+				
+				minWidth:'70%',
+		        minHeight:'70%',
+				maxWidth:'80%',
+		        maxHeight:'80%',
+                
+				closeBtn  : true,//false,
+				
+
+				helpers : {
+				    rotate:true,
+					title : {
+						type : 'inside',
+						position: 'top'
+					}/*,
+					buttons	: {}*/
+				},
+
+				afterLoad : function() {
+					this.title = ' ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				},
+				onComplete: function() {
+				
+				  $("#fancybox-wrap").css({'top':'20px', 'bottom':'auto'});
+			   }
+				
+			});
+			 /***********************/
+				
+			 $('[data-rel=tooltip]').tooltip();
+             $(".select2").css('width','100%').select2({allowClear:true});
+			// $(".date-picker").datepicker();
+            $("#PREGRANCY_START_DATE, #PREGRANCY_END_DATE, #BREAST_FEEDING_START_DATE,#BREAST_FEEDING_END_DATE").daterangepicker({singleDatePicker:!0,singleClasses:"picker_4"},
+              function(a,b,c){console.log(a.toISOString(),b.toISOString(),c)});
+            
+			  var val = $('#DOB').val();
+			  calculate_age(val);
+			 $("#DOB").on('change keyup paste', function() {
+			        var val = $(this).val();
+					calculate_age(val);
+			        /*
+					var val = $(this).val();
+					val_split = val.toString().split("/");
+				
+                   //if(isDay() && isMonth() && isYear())
+			
+			     var cal = new UQCal(val_split[2],val_split[1],val_split[0]); //new UQCal('2017','04','11');
+			    var HijriDate = cal.convert();
+			     Hday   = ("0" + HijriDate.Hday).slice(-2);
+				 Hmonth = ("0" +HijriDate.Hmonth).slice(-2);
+				 Hyear  = HijriDate.Hyear;
+				   
+				 //alert(parseInt(val_split[2]));
+				 HijriDate = parseInt(val_split[2]) > 1902  ?  Hday +'/'+ Hmonth +'/'+ Hyear : '';
+				   
+			     document.getElementById("hejri_DOB").value= HijriDate;
+			     age = getAge(val,3);
+				 age = age.toString().split("-");
+				 
+				 document.getElementById("years").value = age[0];
+				 document.getElementById("months").value = age[1];
+				 document.getElementById("days").value = age[2];*/
+			
+			 });
+			 
+			 function calculate_age(d)
+			 {
+			     var val = d;
+				 val_split = val.toString().split("/");
+				
+                 //if(isDay() && isMonth() && isYear())
+			
+			     var cal = new UQCal(val_split[2],val_split[1],val_split[0]); //new UQCal('2017','04','11');
+			     var HijriDate = cal.convert();
+			     Hday   = ("0" + HijriDate.Hday).slice(-2);
+				 Hmonth = ("0" +HijriDate.Hmonth).slice(-2);
+				 Hyear  = HijriDate.Hyear;
+				 //alert(HijriDate.Hday+"/" +HijriDate.Hmonth+" / " +HijriDate.Hyear);
+				 //alert(parseInt(val_split[2]));
+				 HijriDate = parseInt(val_split[2]) > 1902  ?  Hday +'/'+ Hmonth +'/'+ Hyear : '';
+				   
+			     document.getElementById("hejri_DOB").value= HijriDate;
+			     age = getAge(val,3);
+				 age = age.toString().split("-");
+				 
+				 document.getElementById("years").value = val_split[2] === undefined   ?  '' : parseInt(age[0]) || 0 ;
+				 document.getElementById("months").value = val_split[1] === undefined  ?  '' : parseInt(age[1]) || 0;
+				 document.getElementById("days").value = val_split[0] === undefined || val_split[0] == ''   ?  '' : parseInt(age[2]) || 0;
+				 
+				 var current_year = (new Date()).getFullYear();
+			     var current_month = (new Date()).getMonth();
+				 var current_day = (new Date()).getDate();
+
+				 var m = val_split[1] == 0 ? val_split[1] : val_split[1] - 1;
+				 if((new Date(val_split[2]+"/"+m+"/"+val_split[1]) > new Date(current_year+"/"+current_month+"/"+current_day)) )
+				 { 
+				   reset_dob();
+				 }
+				
+				 //var year_str = val_split[2].toString();
+				 
+				  //alert(val_split[2].toString().length);
+				 
+				 if( (getlength(parseInt(val_split[2])) == 4) && ( current_year - parseInt(val_split[2]) > 100 ))
+				 {
+					   reset_dob();
+				 }
+				 
+				 function getlength(number)
+				 {
+					return number.toString().length;
+				 }
+			 }
+			 
+			 	 $("#hejri_DOB").on('change keyup paste', function() {
+			        var val = $(this).val();
+					
+					val_split = val.toString().split("/");
+				  // alert("hhhhhhhhhhhhhh");
+                   //if(isDay() && isMonth() && isYear())
+			
+					 //var cal = new UQCal(val_split[2],val_split[1],val_split[0]); //new UQCal('2017','04','11');
+					//date = document.getElementById("hend_dateOfLeave").value.toString().split("-");
+				 /*
+					 if(parseInt(val_split[0]) > 30)
+					 {
+					   var current_day = (new Date()).getDate() - 1;
+					   document.getElementById("hejri_DOB").value = current_day;
+					 }
+					 
+					 if(parseInt(val_split[1]) > 12)
+					 {
+					   var current_month = (new Date()).getMonth();
+					   document.getElementById("hejri_DOB").value = val_split[0]+"/"+current_month;
+					 }
+					*/
+					
+					 date = val_split[2] + '-' + val_split[1] + '-' + val_split[0];
+				    
+					 var gregDate = HijriToGreg2(date);
+						 gregDat  = ("0" + gregDate[2]).slice(-2) +'/'+ ("0" +gregDate[1]).slice(-2) +'/'+ gregDate[0];
+					 document.getElementById("DOB").value = gregDat;
+					 
+					 age = getAge(gregDat,3);
+				     age = age.toString().split("-");
+				     /*
+				     var current_year = (new Date()).getFullYear();
+					 
+					 //alert(gregDate[0]);
+				     if(parseInt(gregDate[0]) > current_year)
+					 { 
+					   
+					   document.getElementById("hejri_DOB").value = val_split[0]+"/"+val_split[1]+"/"+"";
+					 }
+					 */
+				    
+	
+	                 document.getElementById("years").value  = age[0] == 'NaN' ? '' : age[0];
+				     document.getElementById("months").value = age[1] == 'NaN' ? '' : age[1];
+				     document.getElementById("days").value   = age[2] == 'NaN' ? '' : age[2];
+					 
+					 var current_year = (new Date()).getFullYear();
+					 var current_month = (new Date()).getMonth();
+					 var current_day = (new Date()).getDate();
+
+					 var m = gregDate[1] == 0 ? gregDate[1] : gregDate[1] - 1;
+					 if((new Date(parseInt(gregDate[0])+"/"+parseInt(m)+"/"+parseInt(gregDate[2])) > new Date(current_year+"/"+current_month+"/"+current_day)))
+					 { 
+					       reset_dob();
+					   
+					 }
+					 
+					 if((gregDate[0].length == 4) && ( current_year - parseInt(gregDate[0]) > 100 ))
+					 {
+						   reset_dob();
+					 }
+					
+					 
+				     
+			 
+			 
+			 });
+			 
+			 function reset_dob()
+			 {
+			           document.getElementById("hejri_DOB").value = "";
+					   document.getElementById("DOB").value = "";
+					   
+					   document.getElementById("years").value  = '';
+				       document.getElementById("months").value = '';
+				       document.getElementById("days").value   = '';
+			 }
+			 
+              	$('#accordion-style').on('click', function(ev){
+					var target = $('input', ev.target);
+					var which = parseInt(target.val());
+					if(which == 2) $('#accordion').addClass('accordion-style2');
+					 else $('#accordion').removeClass('accordion-style2');
+				});
+			})
+	</script>
+	
+	<script>
+	
+	   
+	   function getAge(dateString,dateType) {
+			/*
+			   function getAge
+			   parameters: dateString dateType
+			   returns: boolean
+
+			   dateString is a date passed as a string in the following
+			   formats:
+
+			   type 1 : 19970529
+			   type 2 : 970529
+			   type 3 : 29/05/1997
+			   type 4 : 29/05/97
+
+			   dateType is a numeric integer from 1 to 4, representing
+			   the type of dateString passed, as defined above.
+
+			   Returns string containing the age in years, months and days
+			   in the format yyy years mm months dd days.
+			   Returns empty string if dateType is not one of the expected
+			   values.
+			*/
+
+				var now = new Date();
+				var today = new Date(now.getYear(),now.getMonth(),now.getDate());
+
+				var yearNow = now.getYear();
+				var monthNow = now.getMonth();
+				var dateNow = now.getDate();
+
+				if (dateType == 1)
+					var dob = new Date(dateString.substring(0,4),
+										dateString.substring(4,6)-1,
+										dateString.substring(6,8));
+				else if (dateType == 2)
+					var dob = new Date(dateString.substring(0,2),
+										dateString.substring(2,4)-1,
+										dateString.substring(4,6));
+				else if (dateType == 3)
+					var dob = new Date(dateString.substring(6,10),
+										dateString.substring(3,5)-1,
+										dateString.substring(0,2));
+				else if (dateType == 4)
+					var dob = new Date(dateString.substring(6,8),
+										dateString.substring(3,5)-1,
+										dateString.substring(0,2));
+				else
+					return '';
+
+				var yearDob = dob.getYear();
+				var monthDob = dob.getMonth();
+				var dateDob = dob.getDate();
+
+				yearAge = yearNow - yearDob;
+
+				if (monthNow >= monthDob)
+					var monthAge = monthNow - monthDob;
+				else {
+					yearAge--;
+					var monthAge = 12 + monthNow -monthDob;
+				}
+
+				if (dateNow >= dateDob)
+					var dateAge = dateNow - dateDob;
+				else {
+					monthAge--;
+					var dateAge = 31 + dateNow - dateDob;
+
+					if (monthAge < 0) {
+						monthAge = 11;
+						yearAge--;
+					}
+				}
+
+				 return yearAge +'-'+ monthAge +'-'+ dateAge;
+			}
+			
+			function ctrl_num(id,min,max, evt) 
+			{
+			   var  self = $(id);
+					self.val(self.val().replace(/[^0-9\.]/g, ""));
+					arr = self.val().split('.');
+					
+					if(arr.length > 1)
+					{
+						if(arr.length > 2) { self.val(self.val().slice(0,-1)); } //one dot
+						
+						if(arr[1].length > 2 || arr[0].length == 0) //2 digit after dote
+						{
+						  self.val(self.val().slice(0,-1));
+						}
+						
+						if(arr[1].length == 0 && evt.type == 'change') 
+						{ 
+						  self.val(self.val().slice(0,-1)); //clear_dot() if ther is no digit after dot
+						}
+					}
+								
+					if ((evt.which != 46 || self.val().indexOf('.') != -1) && (evt.which < 48 || evt.which > 57)) 
+					{ //alert("dddddddddddd");
+					 evt.preventDefault();
+					}
+				    
+					if(self.val() < min)
+					{
+					  self.val(min);
+					}
+					else if(self.val() > max)
+					{
+					  self.val(max);
+					}
+			}
+			
+			function ctrl_id_num(id, min, max, evt) 
+			{  
+			   var  self = $(id);
+					self.val(self.val().replace(/[^0-9]/g, ""));
+			   var  current_val  = self.val();
+			   
+				if(current_val.length >= 1)
+				{
+					
+					if(current_val[0] != 1 && current_val[0] != 2) 
+					{
+					  self.val(self.val().slice(0,-1)); 
+					}
+					
+			
+				}
+							
+				if ((evt.which != 46 || self.val().indexOf('.') != -1) && (evt.which < 48 || evt.which > 57)) 
+				{ 
+				 evt.preventDefault();
+				}
+				
+				if(current_val.length > max)
+				{
+				  self.val(self.val().slice(0,-1));
+				}
+					
+			}
+			
+	</script>
+	<script src="app.js"></script>
+	
+  
+
+<div class="daterangepicker dropdown-menu rtl show-calendar opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled" type="button"><font class="kufi_110">تنفيذ</font></button> <button class="cancelBtn btn btn-sm btn-default" type="button"><font class="kufi_110">الغاء</font></button></div></div></div><div class="daterangepicker dropdown-menu rtl show-calendar opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled" type="button"><font class="kufi_110">تنفيذ</font></button> <button class="cancelBtn btn btn-sm btn-default" type="button"><font class="kufi_110">الغاء</font></button></div></div></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span></body></html>

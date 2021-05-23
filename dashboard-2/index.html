@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <link href="./dashboard.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+
+    <title>Design system</title>
+</head>
+
+<body>
+    <header id="sticky-nav">
+        <div class="left">
+            <input type="checkbox" id="menu-checkbox" checked>
+            <label for="menu-checkbox"><img id="hamburger-menu" src="./img/hamburger-menu.svg"></label>
+            <h2 id="logo"><a href="#">LOGO </a></h2>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+            <div class="search-icon"></div>
+        </div>
+
+        <nav class="right">
+            <ul>
+                <li><img src="./img/msg-icon.svg"></li>
+                <li><img src="./img/notification-icon.svg"></li>
+                <li><img src="./img/profile-icon.svg"></li>
+                <li><img src="./img/lang-icon.svg"></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+
+        <div class="overlay"></div>
+
+        <aside>
+            <nav>
+                <ul>
+                    <a href="#">
+                        <li>
+                            <img src="./img/dashboard.svg">
+                            <h4>Dashboard</h4>
+                        </li>
+                    </a>
+                    <a href="../email/">
+                        <li>
+                            <img src="./img/email.svg">
+                            <h4>email</h4>
+                        </li>
+                    </a>
+
+                    <a href="../profile/">
+                        <li>
+                            <img src="./img/profile-2.svg">
+                            <h4>Profile</h4>
+                        </li>
+                    </a>
+                    <a href="../file-manager/">
+                        <li>
+                            <img src="./img/file-manager.svg">
+                            <h4>File Manager</h4>
+                        </li>
+                    </a>
+
+                    <a href="../conponenets/">
+                        <li>
+                            <img src="./img/components.svg">
+                            <h4>components</h4>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+
+    <!--  HERE EMBEDED CODE STARTS   -->
+
+        <main id="dash-container">
+
+            <section id="section-1">
+                <div class="cards-wrapper">
+                    <div class="card-container appointments" style="--color-l:#B8C8D2; --color-d:#18647E;">
+                        <header>
+                            <div class="title">
+                                المواعيد
+                            </div>
+                            <div class="icon-wrapper">
+                                <img src="./img/appointment.svg" alt="">
+                            </div>
+                            <div class="total" id="appointment-total">
+                                846
+                            </div>
+                        </header>
+                        <main>
+                            <div class="pie-wrapper">
+                                <canvas id='appointments-pie'></canvas>
+
+                            </div>
+                        </main>
+                    </div>
+
+                    <div class="card-container followup" style="--color-l:#C8CEDD; --color-d:#5E6EA4;">
+                        <header>
+                            <div class="title">
+                                المراجعين
+                            </div>
+                            <div class="icon-wrapper">
+                                <img src="./img/followup.svg" alt="">
+                            </div>
+                            <div class="total" id="followup-total">
+                                46
+                            </div>
+                        </header>
+                        <main>
+                            <div class="pie-wrapper">
+                                <canvas id='followup-pie'></canvas>
+
+                            </div>
+                        </main>
+                    </div>
+
+                    <div class="card-container reports" style="--color-l:#CAD5E0; --color-d:#004A81; ">
+                        <header>
+                            <div class="title">
+                                التقارير
+                            </div>
+                            <div class="icon-wrapper">
+                                <img src="./img/report.svg" alt="">
+                            </div>
+                            <div class="total" id="reports-total">
+                                86
+                            </div>
+                        </header>
+                        <main>
+                            <div class="pie-wrapper">
+                                <canvas id='reports-pie'></canvas>
+
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="section-2">
+                <h3 class="section-title">المراجعين خلال الربع الأول</h3>
+                <div class="charts-container" >
+                    <div class="quarter-followup-donut">
+                        <canvas id="quarter-followup-donut"></canvas>
+                    </div>
+                    <div class="quarter-followup-bar">
+                        <canvas id="quarter-followup-bar"></canvas>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+    </main>
+    <!--  HERE EMBEDED CODE ENDS   -->
+
+
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./template.js"></script>
+</body>
+
+</html>

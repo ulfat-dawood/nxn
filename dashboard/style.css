@@ -1,0 +1,32 @@
+#dash-container{ 
+    border:1px solid red;
+}
+/* 
+
+___________TABLE OF CONTENT___________
+
+-----section 1: [SECTION ONE]
+
+ */
+
+
+
+
+/*___________ SECTION ONE ___________*/
+#section-1 .cards-wrapper{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-1 .card-container{ 
+    border:1px solid green; 
+    flex: 0 1 30%;
+}
+#section-1 .card-container header{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background:var(--color-l);
+}
+

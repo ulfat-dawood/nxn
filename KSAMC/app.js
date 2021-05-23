@@ -184,10 +184,25 @@ window.addEventListener('scroll', ()=>{
 var days =["اﻷحد","اﻷثنين","الثلاثاء","اﻷربعاء","الخميس","الجمعة","السبت"];
 
 var date = new Date();
-const day = date.getDay();
+const day = date.getDate();
 const year = date.getFullYear()
 const month= months[date.getMonth()];
 const dayOfWeek= days[date.getDay()];
 const dateFormat= ` ${day} ${month}، ${year} `;
 dayOfWeekHolder.innerHTML= dayOfWeek;
 dateHolder.innerHTML= dateFormat; 
+//TIME:
+function formatAMPM() {
+    date= new Date(); 
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'ص' : 'م';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    timeHolder.innerHTML= strTime;
+  }
+  
+  
+  setInterval(formatAMPM, 3000);

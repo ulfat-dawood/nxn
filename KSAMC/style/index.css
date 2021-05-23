@@ -1,3 +1,7 @@
+html{
+	font-size:62.5%;  /* 1rem  = 10px */
+	scroll-behavior: smooth;
+}
 .app-wrapper {
   /* border:5px solid green;  */
   width: 100vw;
@@ -511,4 +515,63 @@
   #header .logo h3{
     font-size: 18px;
   }
+}
+
+/* ////////////// INFO SECTION  ////////////// */
+#info-section .info-wrapper{
+  display: flex;
+}
+#info-section .msg-wrapper{
+  background: #fff;
+  box-shadow: 11px 11px 0 0 var(--primary-dim);
+  padding:3rem;
+  position: relative;
+  border-top: 5px solid var(--primary);
+ border-radius: 10px;
+ /* width:900px;  */
+}
+#info-section .msg-wrapper::before{
+  position: absolute;
+  content:"";
+  background: transparent;
+  width: 0px; height: 0px;
+  top:-40px; right:50px; 
+  border:20px solid transparent; 
+  border-bottom:20px solid var(--primary);
+   
+
+
+}
+#info-section .msg-wrapper .title{
+  color: var(--primary);
+  font-size:24px; 
+  margin-bottom: 2rem;
+  width: fit-content;
+  /* add an underline  */
+  background-image: linear-gradient(var(--primary-dim) 0%, var(--primary-dim) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: 0 70%;
+  transition: background-size 0.25s ease-in;
+  border-radius: 15px;
+  
+}
+#info-section .msg-wrapper .body{
+  color: var(--primary);
+  font-size:22px; 
+
+}
+#info-section .img-wrapper{
+   width:25%;
+   flex-shrink: 0;
+   margin-right: 5rem;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 11px 11px 0 0 var(--primary-dim);
+   border-top: 5px solid var(--primary);
+
+}
+#info-section .img-wrapper img{
+  width:100%; height: 100%;
+  object-fit: cover;
 }

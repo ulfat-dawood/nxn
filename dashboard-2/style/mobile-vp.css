@@ -1,0 +1,12 @@
+
+@media (max-width: 480px){
+    #sticky-nav .right{
+        display:none;
+    }
+    #sticky-nav .left{
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+
+
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+#dash-container{ 
+    /* border:1px solid red; */
+    margin: 2rem 7%; 
+    /* width: 80%; */
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+
+    
+}
+section{
+    margin-bottom:5rem; 
+}
+.section-title{
+    /* background: #000; */
+    width: fit-content;
+    margin: 0 auto;
+}
+/* 
+
+___________TABLE OF CONTENT___________
+
+-----section 1: [SECTION ONE]
+-----section 2: [SECTION TWO]
+
+
+______________________________________
+
+
+*/
+/*___________ SECTION ONE ___________*/
+
+#section-1 .cards-wrapper{
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-top:5rem; 
+    justify-content: space-between;
+}
+
+#section-1 .card-container{ 
+    /* border:1px solid green;  */
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 17px 0 rgba(0,0,0,5%);
+    flex: 0 1 300px;
+}
+#section-1 .card-container header{
+    border-radius: 10px 10px 0 0;
+    padding: 1.5rem 3rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background:var(--color-l);
+    position: relative;
+}
+
+#section-1 .card-container header > div{
+    color: var(--color-d); 
+    font-weight: bold;
+}
+#section-1 .card-container header .icon-wrapper{
+    flex: 0 0 auto; 
+    box-shadow: 0 0 17px 0 rgba(0,0,0,5%);
+    height: 35px; width:35px; 
+    background: #fff;
+    padding: .2rem;
+    border-radius: 50%;
+    display: flex;justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: scale(1.4) translate(-50%,-30%);
+    transform-origin: 50% 50%;
+    left:50%; top:0; 
+}
+#section-1 .card-container main{
+    padding: 1.5rem; 
+}
+
+/*___________ SECTION two ___________*/
+#section-2 .charts-container{
+    display: flex;
+    justify-content: space-between;
+}
+#section-2 .quarter-followup-donut{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 17px 0 rgba(0,0,0,5%);
+    width:38%;
+    /* flex-grow: 1; */
+}
+#section-2 .quarter-followup-bar{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 17px 0 rgba(0,0,0,5%);    
+    width:58%;
+    /* flex-grow: 1; */
+}
+#section-2 .quarter-followup-donut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+@media (max-width: 768px){
+
+    /* ==================== SEARCH-BAR ====================  */
+    #sticky-nav .search-bar{
+        display: none;
+    }
+    aside{
+        position: fixed;
+        left:0;
+    }
+    aside.collapse{
+        width:280px;
+        left: -280px;
+    }
+    aside.collapse li h4{
+        display: block;
+    }
+    /* ========== OVERLAY ==========  */
+
+
+    .overlay.active{
+        display: block;
+        position: fixed; top:0;
+        background: #303030; opacity: 0.85;
+        height: 100%; width: 100%;
+        z-index: 1;
+        cursor: pointer;
+        pointer-events: all;
+    }
+
+
+}
