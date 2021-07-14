@@ -1,0 +1,3 @@
+*Naming of the image with timestamp. 
+*Deleting images from the server. 
+*How to reorder new in the admin page? 
