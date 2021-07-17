@@ -1,4 +1,4 @@
-const lowerJaw= document.querySelectorAll(".lower-jaw img");
+const teeth= document.querySelectorAll("img.tooth");
 const buttons= document.querySelectorAll(".buttons div");
 const msgBox= document.querySelector('#msg');
 
@@ -11,7 +11,7 @@ buttons.forEach((button)=>{
     })
 })
 
-lowerJaw.forEach((tooth)=>{
+teeth.forEach((tooth)=>{
     tooth.addEventListener('click', ()=>{
         tooth.style.filter= filters[currentStatus]; 
 
@@ -21,4 +21,6 @@ lowerJaw.forEach((tooth)=>{
         msgBox.innerHTML=msg[currentStatus]; 
     })
 })
+
+
 

@@ -29,13 +29,13 @@ body{
 }
 
 
-.lower-jaw-container{
+.lower-jaw-container, .upper-jaw-container{
 	position: relative;
 }
-.lower-jaw{
+.lower-jaw, .upper-jaw{
 	display: flex;
 }
-.lower-jaw img{
+.lower-jaw img, .upper-jaw img{
 	height: 100px;
 }
 
@@ -44,20 +44,26 @@ body{
 	top:19px; 
 
 }
-.lower-line img{
+.upper-line{
+	position: absolute;
+	bottom: 19px; 
+	width:100%; 
+}
+
+.lower-line img, .upper-line img{
 	height: 24.2px;
 
 }
 img{
 	display: block;
-	transition: all 1s ease;
+	transition: all 1.7s ease;
 }
 img:not(.lower-line img):hover{
-	z-index: 99; transform: scale(1.6);  cursor: pointer;
+	z-index: 99; transform: scale(1.3);  cursor: pointer;
 }
 img#gum:hover{
-	z-index: 99; transform: scaleY(2.5);  cursor: pointer;
-	filter: brightness(1.75);
+	/* z-index: 99; transform: scaleY(2.5);  cursor: pointer;
+	filter: brightness(1.75); */
 }
 
 .buttons{
@@ -79,4 +85,57 @@ img#gum:hover{
 	background: #dbdbdbcc;
 	font-size: 1.5rem;
 }
+
+/* SELECT  */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: #2c3e50;
+	background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+	display: none;
+  }
+  /* Custom Select */
+  .select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	height: 3em;
+	line-height: 3;
+	background: #2c3e50;
+	overflow: hidden;
+	border-radius: .25em;
+  }
+  select {
+	flex: 1;
+	padding: 0 .5em;
+	color: #fff;
+	cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: #34495e;
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+	color: beige;
+  }
+  
 
