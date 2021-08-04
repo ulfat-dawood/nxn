@@ -1,0 +1,147 @@
+.container{
+    width:95%; 
+    max-width:90%; 
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-part{
+    /* fill:#FCBBA1 ;  */
+     
+    fill: #dbdbdb; 
+    cursor: pointer;
+}
+/* .body-part:hover{
+    fill:#EB7356;
+} */
+#tooltip {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px; 
+    background: #ffffffcc;
+    box-shadow:0 0 10px 0 #00000033; 
+    border-radius: 5px;
+    padding: 5px;
+}
+.svg-container{
+    box-shadow: 0 0 50px 5px #00000016;
+    /* border-radius: 10px; */
+    width: 100%; 
+    margin:1rem; 
+    padding:.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svg-container .title{
+    font-family: "Montserrat";
+    margin:1rem; 
+    font-size: 24px;
+    color:#909090; 
+}
+.graph-wrapper{
+    display: flex;
+    flex: 0 0 55%; 
+    /* border: 5px solid blue;  */
+    align-self: center;
+
+}
+
+/* //////////////// NOTES //////////////////  */
+
+.notes-wrapper{ 
+    flex: 0 0 40%; 
+    /* border:1px solid green;  */
+    font-size:20px; 
+    overflow-y: auto;
+    /* hide scroll */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.notes-wrapper::-webkit-scrollbar {
+    display: none;}
+
+.notes-wrapper ul{
+    list-style: none;
+    display:flex; 
+    flex-direction: column;
+    align-items: stretch;
+    /* border: 1px solid purple;  */
+    padding-left:0; 
+
+}
+.note{
+    box-shadow: 0 0 50px 5px #00000016;
+    border-radius: 10px;
+    margin: 0 10px 1.5rem 10px;
+    font-family: "Montserrat";
+
+}
+.note header{
+    background: var(--color-d);
+    padding: 20px; 
+    padding:1rem;
+    font-weight: 600; color:var(--color);
+    border-radius: 10px 10px 0 0;
+
+}
+.note header span{
+    color: var(--color) ; 
+}
+.note article{
+    padding: 20px; 
+    height: 70px;
+    overflow-y: auto;
+
+    /* hide scroll */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.note article::-webkit-scrollbar {
+    display: none;}
+
+/* //////////////// MEDIA QUERIES  //////////////////  */
+@media screen and (max-width:700px){
+    .graph-wrapper{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+.body-part#shoulder-r-f{
+    fill:#ae2d2d; 
+}
+
+.body-part#abdomen-r-f{
+    fill:#2d52ae; 
+}
+.body-part#neck-f{
+    fill:#8c2dae; 
+}
+.body-part#shoulder-l-f{
+    fill:#2dae7f; 
+}
+.body-part#chest-l-f{
+    fill:#3a2dae; 
+}
+.body-part#head-r-f{
+    fill:#ae942d; 
+}
+.body-part#arm-r-f{
+    fill:#ae5c2d; 
+}
+.body-part:hover{
+    filter: brightness(0.8)
+}
